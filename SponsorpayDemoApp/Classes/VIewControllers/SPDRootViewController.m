@@ -1,3 +1,4 @@
+
 // Header
 #import "SPDRootViewController.h"
 
@@ -35,9 +36,11 @@
   // Setup Sponsorpay API controller
   NSString *uID = [SPDDataStore sponsorpayUID];
   NSString *appID = [SPDDataStore sponsorpayAppID];
+  NSString *APIKey = [SPDDataStore sponsorpayAPIKey];
   self.apiController = [[SPAPIController alloc] initWithDelegate:self
                                                              uID:uID
-                                                           appID:appID];
+                                                           appID:appID
+                                                          APIKey:APIKey];
   
   // Fetch offers
   [self.apiController fetchOffers];
@@ -45,9 +48,13 @@
 
 #pragma mark - <SPAPIControllerDelegate>
 
-- (void)SPAPIControllerDidFetchOffers
+- (void)SPAPIControllerDidFetchOffers:(NSArray *)offers
 {
-  
+  ;
+}
+- (void)SPAPIControllerFetchOffersDidFailWithError:(NSError *)error
+{
+  ;
 }
 
 @end

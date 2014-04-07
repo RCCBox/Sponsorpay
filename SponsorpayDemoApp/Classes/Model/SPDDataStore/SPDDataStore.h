@@ -9,4 +9,6 @@
 
 + (NSString *)sponsorpayAppID;
 
++ (NSString *)sponsorpayAPIKey;
+
 @end

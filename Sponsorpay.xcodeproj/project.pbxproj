@@ -15,8 +15,6 @@
 		A4263E4818F2BBDE00377B3F /* libSponsorpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E3018F2BBDE00377B3F /* libSponsorpay.a */; };
 		A4263E4E18F2BBDE00377B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4263E4C18F2BBDE00377B3F /* InfoPlist.strings */; };
 		A4263E5018F2BBDE00377B3F /* SponsorpayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263E4F18F2BBDE00377B3F /* SponsorpayTests.m */; };
-		A4263E5E18F2BC2000377B3F /* SPAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263E5D18F2BC2000377B3F /* SPAPIController.m */; };
-		A4263E5F18F2BC6E00377B3F /* SPAPIController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A4263E5C18F2BC2000377B3F /* SPAPIController.h */; };
 		A4263E7518F2BD9500377B3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E3318F2BBDE00377B3F /* Foundation.framework */; };
 		A4263E7718F2BD9500377B3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E7618F2BD9500377B3F /* CoreGraphics.framework */; };
 		A4263E7818F2BD9500377B3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E4418F2BBDE00377B3F /* UIKit.framework */; };
@@ -33,6 +31,17 @@
 		A4263EAC18F2BE8700377B3F /* libSponsorpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E3018F2BBDE00377B3F /* libSponsorpay.a */; };
 		A4263EAE18F2BECF00377B3F /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4263EAD18F2BECF00377B3F /* Window.xib */; };
 		A4263EB318F2BFAC00377B3F /* SPDDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263EB218F2BFAC00377B3F /* SPDDataStore.m */; };
+		A4263EC718F2C2FA00377B3F /* SPAPIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263EC518F2C2FA00377B3F /* SPAPIController.m */; };
+		A4263ECE18F2C35A00377B3F /* SPEnvNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263ECA18F2C35A00377B3F /* SPEnvNetworkInfo.m */; };
+		A4263ECF18F2C35A00377B3F /* SPEnvPhoneInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263ECD18F2C35A00377B3F /* SPEnvPhoneInfo.m */; };
+		A4263ED418F2C4EC00377B3F /* SPDate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263ED318F2C4EC00377B3F /* SPDate.m */; };
+		A4263EDE18F2C54C00377B3F /* SPString.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263EDD18F2C54C00377B3F /* SPString.m */; };
+		A4263EE218F2C5D000377B3F /* SPError.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263EE118F2C5D000377B3F /* SPError.m */; };
+		A4263EE718F2C90E00377B3F /* SPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263EE618F2C90E00377B3F /* SPLog.m */; };
+		A484DB5918F2F537002192D8 /* SPOffer.m in Sources */ = {isa = PBXBuildFile; fileRef = A484DB5818F2F537002192D8 /* SPOffer.m */; };
+		A484DB5D18F307D3002192D8 /* SPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A484DB5C18F307D3002192D8 /* SPURL.m */; };
+		A484DB5F18F325C4002192D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484DB5E18F325C4002192D8 /* AdSupport.framework */; };
+		A484DB6018F325D7002192D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484DB5E18F325C4002192D8 /* AdSupport.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,7 +82,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				A4263E5F18F2BC6E00377B3F /* SPAPIController.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,8 +99,6 @@
 		A4263E4B18F2BBDE00377B3F /* SponsorpayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SponsorpayTests-Info.plist"; sourceTree = "<group>"; };
 		A4263E4D18F2BBDE00377B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4263E4F18F2BBDE00377B3F /* SponsorpayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SponsorpayTests.m; sourceTree = "<group>"; };
-		A4263E5C18F2BC2000377B3F /* SPAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAPIController.h; sourceTree = "<group>"; };
-		A4263E5D18F2BC2000377B3F /* SPAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAPIController.m; sourceTree = "<group>"; };
 		A4263E7418F2BD9500377B3F /* SponsorpayDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SponsorpayDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4263E7618F2BD9500377B3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A4263E7B18F2BD9500377B3F /* SponsorpayDemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SponsorpayDemoApp-Info.plist"; sourceTree = "<group>"; };
@@ -111,6 +117,26 @@
 		A4263EAD18F2BECF00377B3F /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Window.xib; path = SupportingFiles/Window.xib; sourceTree = "<group>"; };
 		A4263EB118F2BFAC00377B3F /* SPDDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDDataStore.h; path = Model/SPDDataStore/SPDDataStore.h; sourceTree = "<group>"; };
 		A4263EB218F2BFAC00377B3F /* SPDDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDDataStore.m; path = Model/SPDDataStore/SPDDataStore.m; sourceTree = "<group>"; };
+		A4263EC418F2C2FA00377B3F /* SPAPIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPAPIController.h; sourceTree = "<group>"; };
+		A4263EC518F2C2FA00377B3F /* SPAPIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPAPIController.m; sourceTree = "<group>"; };
+		A4263EC918F2C35A00377B3F /* SPEnvNetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPEnvNetworkInfo.h; sourceTree = "<group>"; };
+		A4263ECA18F2C35A00377B3F /* SPEnvNetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPEnvNetworkInfo.m; sourceTree = "<group>"; };
+		A4263ECC18F2C35A00377B3F /* SPEnvPhoneInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPEnvPhoneInfo.h; sourceTree = "<group>"; };
+		A4263ECD18F2C35A00377B3F /* SPEnvPhoneInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPEnvPhoneInfo.m; sourceTree = "<group>"; };
+		A4263ED218F2C4EC00377B3F /* SPDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDate.h; path = Utility/SPDate.h; sourceTree = "<group>"; };
+		A4263ED318F2C4EC00377B3F /* SPDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDate.m; path = Utility/SPDate.m; sourceTree = "<group>"; };
+		A4263EDC18F2C54C00377B3F /* SPString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPString.h; path = Utility/SPString/SPString.h; sourceTree = "<group>"; };
+		A4263EDD18F2C54C00377B3F /* SPString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPString.m; path = Utility/SPString/SPString.m; sourceTree = "<group>"; };
+		A4263EE018F2C5D000377B3F /* SPError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPError.h; path = Utility/Error/SPError.h; sourceTree = "<group>"; };
+		A4263EE118F2C5D000377B3F /* SPError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPError.m; path = Utility/Error/SPError.m; sourceTree = "<group>"; };
+		A4263EE318F2C63700377B3F /* SPMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPMacros.h; path = SupportingFiles/SPMacros.h; sourceTree = SOURCE_ROOT; };
+		A4263EE518F2C90E00377B3F /* SPLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPLog.h; path = Utility/SPLog/SPLog.h; sourceTree = "<group>"; };
+		A4263EE618F2C90E00377B3F /* SPLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPLog.m; path = Utility/SPLog/SPLog.m; sourceTree = "<group>"; };
+		A484DB5718F2F537002192D8 /* SPOffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPOffer.h; path = SPOffer/SPOffer.h; sourceTree = "<group>"; };
+		A484DB5818F2F537002192D8 /* SPOffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPOffer.m; path = SPOffer/SPOffer.m; sourceTree = "<group>"; };
+		A484DB5B18F307D3002192D8 /* SPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPURL.h; path = Utility/SPURL/SPURL.h; sourceTree = "<group>"; };
+		A484DB5C18F307D3002192D8 /* SPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPURL.m; path = Utility/SPURL/SPURL.m; sourceTree = "<group>"; };
+		A484DB5E18F325C4002192D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A484DB5F18F325C4002192D8 /* AdSupport.framework in Frameworks */,
 				A4263E3418F2BBDE00377B3F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +164,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A484DB6018F325D7002192D8 /* AdSupport.framework in Frameworks */,
 				A4263EAC18F2BE8700377B3F /* libSponsorpay.a in Frameworks */,
 				A4263E7718F2BD9500377B3F /* CoreGraphics.framework in Frameworks */,
 				A4263E7818F2BD9500377B3F /* UIKit.framework in Frameworks */,
@@ -183,6 +211,7 @@
 		A4263E3218F2BBDE00377B3F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A484DB5E18F325C4002192D8 /* AdSupport.framework */,
 				A4263E3318F2BBDE00377B3F /* Foundation.framework */,
 				A4263E4118F2BBDE00377B3F /* XCTest.framework */,
 				A4263E4418F2BBDE00377B3F /* UIKit.framework */,
@@ -206,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				A4263E3718F2BBDE00377B3F /* Sponsorpay-Prefix.pch */,
+				A4263EE318F2C63700377B3F /* SPMacros.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -231,26 +261,11 @@
 		A4263E5918F2BC2000377B3F /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				A4263E5A18F2BC2000377B3F /* Model */,
+				A4263ED018F2C4BC00377B3F /* Utility */,
+				A4263EBE18F2C2FA00377B3F /* Env */,
+				A4263EC318F2C2FA00377B3F /* SPAPIController */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		A4263E5A18F2BC2000377B3F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A4263E5B18F2BC2000377B3F /* SPAPIController */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A4263E5B18F2BC2000377B3F /* SPAPIController */ = {
-			isa = PBXGroup;
-			children = (
-				A4263E5C18F2BC2000377B3F /* SPAPIController.h */,
-				A4263E5D18F2BC2000377B3F /* SPAPIController.m */,
-			);
-			path = SPAPIController;
 			sourceTree = "<group>";
 		};
 		A4263E7918F2BD9500377B3F /* SponsorpayDemoApp */ = {
@@ -336,6 +351,109 @@
 				A4263EB218F2BFAC00377B3F /* SPDDataStore.m */,
 			);
 			name = SPDDataStore;
+			sourceTree = "<group>";
+		};
+		A4263EBE18F2C2FA00377B3F /* Env */ = {
+			isa = PBXGroup;
+			children = (
+				A4263EC818F2C35A00377B3F /* SPEnvNetworkInfo */,
+				A4263ECB18F2C35A00377B3F /* SPEnvPhoneInfo */,
+			);
+			path = Env;
+			sourceTree = "<group>";
+		};
+		A4263EC318F2C2FA00377B3F /* SPAPIController */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB5618F2F4FE002192D8 /* SPOffer */,
+				A4263EC418F2C2FA00377B3F /* SPAPIController.h */,
+				A4263EC518F2C2FA00377B3F /* SPAPIController.m */,
+			);
+			path = SPAPIController;
+			sourceTree = "<group>";
+		};
+		A4263EC818F2C35A00377B3F /* SPEnvNetworkInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A4263EC918F2C35A00377B3F /* SPEnvNetworkInfo.h */,
+				A4263ECA18F2C35A00377B3F /* SPEnvNetworkInfo.m */,
+			);
+			path = SPEnvNetworkInfo;
+			sourceTree = "<group>";
+		};
+		A4263ECB18F2C35A00377B3F /* SPEnvPhoneInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A4263ECC18F2C35A00377B3F /* SPEnvPhoneInfo.h */,
+				A4263ECD18F2C35A00377B3F /* SPEnvPhoneInfo.m */,
+			);
+			path = SPEnvPhoneInfo;
+			sourceTree = "<group>";
+		};
+		A4263ED018F2C4BC00377B3F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB5A18F307BE002192D8 /* SPURL */,
+				A4263EE418F2C8F300377B3F /* SPLog */,
+				A4263EDF18F2C5BB00377B3F /* Error */,
+				A4263EDB18F2C53500377B3F /* SPString */,
+				A4263ED118F2C4C600377B3F /* SPDate */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		A4263ED118F2C4C600377B3F /* SPDate */ = {
+			isa = PBXGroup;
+			children = (
+				A4263ED218F2C4EC00377B3F /* SPDate.h */,
+				A4263ED318F2C4EC00377B3F /* SPDate.m */,
+			);
+			name = SPDate;
+			sourceTree = "<group>";
+		};
+		A4263EDB18F2C53500377B3F /* SPString */ = {
+			isa = PBXGroup;
+			children = (
+				A4263EDC18F2C54C00377B3F /* SPString.h */,
+				A4263EDD18F2C54C00377B3F /* SPString.m */,
+			);
+			name = SPString;
+			sourceTree = "<group>";
+		};
+		A4263EDF18F2C5BB00377B3F /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				A4263EE018F2C5D000377B3F /* SPError.h */,
+				A4263EE118F2C5D000377B3F /* SPError.m */,
+			);
+			name = Error;
+			sourceTree = "<group>";
+		};
+		A4263EE418F2C8F300377B3F /* SPLog */ = {
+			isa = PBXGroup;
+			children = (
+				A4263EE518F2C90E00377B3F /* SPLog.h */,
+				A4263EE618F2C90E00377B3F /* SPLog.m */,
+			);
+			name = SPLog;
+			sourceTree = "<group>";
+		};
+		A484DB5618F2F4FE002192D8 /* SPOffer */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB5718F2F537002192D8 /* SPOffer.h */,
+				A484DB5818F2F537002192D8 /* SPOffer.m */,
+			);
+			name = SPOffer;
+			sourceTree = "<group>";
+		};
+		A484DB5A18F307BE002192D8 /* SPURL */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB5B18F307D3002192D8 /* SPURL.h */,
+				A484DB5C18F307D3002192D8 /* SPURL.m */,
+			);
+			name = SPURL;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -484,8 +602,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4263ED418F2C4EC00377B3F /* SPDate.m in Sources */,
+				A4263EC718F2C2FA00377B3F /* SPAPIController.m in Sources */,
+				A484DB5D18F307D3002192D8 /* SPURL.m in Sources */,
+				A4263ECF18F2C35A00377B3F /* SPEnvPhoneInfo.m in Sources */,
+				A4263EDE18F2C54C00377B3F /* SPString.m in Sources */,
+				A4263EE218F2C5D000377B3F /* SPError.m in Sources */,
 				A4263E3B18F2BBDE00377B3F /* Sponsorpay.m in Sources */,
-				A4263E5E18F2BC2000377B3F /* SPAPIController.m in Sources */,
+				A484DB5918F2F537002192D8 /* SPOffer.m in Sources */,
+				A4263ECE18F2C35A00377B3F /* SPEnvNetworkInfo.m in Sources */,
+				A4263EE718F2C90E00377B3F /* SPLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -818,6 +944,7 @@
 				A4263E9A18F2BD9500377B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A4263E9E18F2BD9500377B3F /* Build configuration list for PBXNativeTarget "SponsorpayDemoAppTests" */ = {
 			isa = XCConfigurationList;
@@ -826,6 +953,7 @@
 				A4263E9C18F2BD9500377B3F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

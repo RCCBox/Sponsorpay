@@ -3,7 +3,10 @@
 
 @protocol SPAPIControllerDelegate <NSObject>
 
-- (void)SPAPIControllerDidFetchOffers;
+#pragma mark - Delegate methods (Offers)
+
+- (void)SPAPIControllerDidFetchOffers:(NSArray *)offers;
+- (void)SPAPIControllerFetchOffersDidFailWithError:(NSError *)error;
 
 @end
 
@@ -17,9 +20,10 @@
 
 - (instancetype)initWithDelegate:(NSObject<SPAPIControllerDelegate> *)delegate
                              uID:(NSString *)uID
-                           appID:(NSString *)appID;
+                           appID:(NSString *)appID
+                          APIKey:(NSString *)APIKey;
 
-#pragma mark - Offers
+#pragma mark - API (Offers)
 
 - (void)fetchOffers;
 
