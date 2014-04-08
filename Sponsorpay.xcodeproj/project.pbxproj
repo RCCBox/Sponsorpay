@@ -26,7 +26,6 @@
 		A4263E9618F2BD9500377B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4263E9418F2BD9500377B3F /* InfoPlist.strings */; };
 		A4263E9818F2BD9500377B3F /* SponsorpayDemoAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263E9718F2BD9500377B3F /* SponsorpayDemoAppTests.m */; };
 		A4263EA818F2BE1C00377B3F /* SPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263EA418F2BE1C00377B3F /* SPDAppDelegate.m */; };
-		A4263EA918F2BE1C00377B3F /* SPDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263EA718F2BE1C00377B3F /* SPDRootViewController.m */; };
 		A4263EAC18F2BE8700377B3F /* libSponsorpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E3018F2BBDE00377B3F /* libSponsorpay.a */; };
 		A4263EAE18F2BECF00377B3F /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4263EAD18F2BECF00377B3F /* Window.xib */; };
 		A4263EB318F2BFAC00377B3F /* SPDDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263EB218F2BFAC00377B3F /* SPDDataStore.m */; };
@@ -47,6 +46,11 @@
 		A4CC3CD618F3E8DD00C2B369 /* SPSwizzelingController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CD518F3E8DD00C2B369 /* SPSwizzelingController.m */; };
 		A4CC3CDA18F3EFAD00C2B369 /* SPDataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CD918F3EFAD00C2B369 /* SPDataFactory.m */; };
 		A4CC3CDC18F3F0E000C2B369 /* offersAPIResponseJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4CC3CDB18F3F0E000C2B369 /* offersAPIResponseJSON.txt */; };
+		A4CC3CE518F401CD00C2B369 /* SPDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CE418F401CD00C2B369 /* SPDRootViewController.m */; };
+		A4CC3CEA18F4033500C2B369 /* SPDOffersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CE818F4033500C2B369 /* SPDOffersViewController.m */; };
+		A4CC3CEB18F4033500C2B369 /* SPDOffersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CC3CE918F4033500C2B369 /* SPDOffersViewController.xib */; };
+		A4CC3CF018F40AE600C2B369 /* SPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CEE18F40AE600C2B369 /* SPTableViewCell.m */; };
+		A4CC3CF118F40AE600C2B369 /* SPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CC3CEF18F40AE600C2B369 /* SPTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,8 +162,6 @@
 		A4263E9718F2BD9500377B3F /* SponsorpayDemoAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SponsorpayDemoAppTests.m; sourceTree = "<group>"; };
 		A4263EA318F2BE1C00377B3F /* SPDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDAppDelegate.h; sourceTree = "<group>"; };
 		A4263EA418F2BE1C00377B3F /* SPDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDAppDelegate.m; sourceTree = "<group>"; };
-		A4263EA618F2BE1C00377B3F /* SPDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDRootViewController.h; sourceTree = "<group>"; };
-		A4263EA718F2BE1C00377B3F /* SPDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDRootViewController.m; sourceTree = "<group>"; };
 		A4263EAD18F2BECF00377B3F /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = Window.xib; path = SupportingFiles/Window.xib; sourceTree = "<group>"; };
 		A4263EB118F2BFAC00377B3F /* SPDDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDDataStore.h; path = Model/SPDDataStore/SPDDataStore.h; sourceTree = "<group>"; };
 		A4263EB218F2BFAC00377B3F /* SPDDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDDataStore.m; path = Model/SPDDataStore/SPDDataStore.m; sourceTree = "<group>"; };
@@ -192,6 +194,14 @@
 		A4CC3CD818F3EFAD00C2B369 /* SPDataFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDataFactory.h; path = TestHelpers/SPDataFactory/SPDataFactory.h; sourceTree = "<group>"; };
 		A4CC3CD918F3EFAD00C2B369 /* SPDataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDataFactory.m; path = TestHelpers/SPDataFactory/SPDataFactory.m; sourceTree = "<group>"; };
 		A4CC3CDB18F3F0E000C2B369 /* offersAPIResponseJSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = offersAPIResponseJSON.txt; path = TestHelpers/SPDataFactory/offersAPIResponseJSON.txt; sourceTree = "<group>"; };
+		A4CC3CE318F401CD00C2B369 /* SPDRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDRootViewController.h; sourceTree = "<group>"; };
+		A4CC3CE418F401CD00C2B369 /* SPDRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDRootViewController.m; sourceTree = "<group>"; };
+		A4CC3CE718F4033500C2B369 /* SPDOffersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDOffersViewController.h; path = SPDOffersViewController/SPDOffersViewController.h; sourceTree = "<group>"; };
+		A4CC3CE818F4033500C2B369 /* SPDOffersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDOffersViewController.m; path = SPDOffersViewController/SPDOffersViewController.m; sourceTree = "<group>"; };
+		A4CC3CE918F4033500C2B369 /* SPDOffersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SPDOffersViewController.xib; path = SPDOffersViewController/SPDOffersViewController.xib; sourceTree = "<group>"; };
+		A4CC3CED18F40AE600C2B369 /* SPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTableViewCell.h; sourceTree = "<group>"; };
+		A4CC3CEE18F40AE600C2B369 /* SPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTableViewCell.m; sourceTree = "<group>"; };
+		A4CC3CEF18F40AE600C2B369 /* SPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -371,7 +381,7 @@
 			children = (
 				A4263EA218F2BE1C00377B3F /* AppDelegate */,
 				A4263EAF18F2BF8F00377B3F /* Model */,
-				A4263EA518F2BE1C00377B3F /* VIewControllers */,
+				A4CC3CE118F401CD00C2B369 /* ViewControllers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -383,15 +393,6 @@
 				A4263EA418F2BE1C00377B3F /* SPDAppDelegate.m */,
 			);
 			path = AppDelegate;
-			sourceTree = "<group>";
-		};
-		A4263EA518F2BE1C00377B3F /* VIewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				A4263EA618F2BE1C00377B3F /* SPDRootViewController.h */,
-				A4263EA718F2BE1C00377B3F /* SPDRootViewController.m */,
-			);
-			path = VIewControllers;
 			sourceTree = "<group>";
 		};
 		A4263EAF18F2BF8F00377B3F /* Model */ = {
@@ -589,6 +590,46 @@
 			name = SPDataFactory;
 			sourceTree = "<group>";
 		};
+		A4CC3CE118F401CD00C2B369 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CE218F401CD00C2B369 /* SPDRootViewController */,
+				A4CC3CE618F401D700C2B369 /* SPDOffersViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A4CC3CE218F401CD00C2B369 /* SPDRootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CE318F401CD00C2B369 /* SPDRootViewController.h */,
+				A4CC3CE418F401CD00C2B369 /* SPDRootViewController.m */,
+			);
+			path = SPDRootViewController;
+			sourceTree = "<group>";
+		};
+		A4CC3CE618F401D700C2B369 /* SPDOffersViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CEC18F40AE600C2B369 /* SPTableViewCell */,
+				A4CC3CE718F4033500C2B369 /* SPDOffersViewController.h */,
+				A4CC3CE818F4033500C2B369 /* SPDOffersViewController.m */,
+				A4CC3CE918F4033500C2B369 /* SPDOffersViewController.xib */,
+			);
+			name = SPDOffersViewController;
+			sourceTree = "<group>";
+		};
+		A4CC3CEC18F40AE600C2B369 /* SPTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CED18F40AE600C2B369 /* SPTableViewCell.h */,
+				A4CC3CEE18F40AE600C2B369 /* SPTableViewCell.m */,
+				A4CC3CEF18F40AE600C2B369 /* SPTableViewCell.xib */,
+			);
+			name = SPTableViewCell;
+			path = SPDOffersViewController/SPTableViewCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -763,6 +804,8 @@
 				A4263E7E18F2BD9500377B3F /* InfoPlist.strings in Resources */,
 				A4263E8618F2BD9500377B3F /* Images.xcassets in Resources */,
 				A4263EAE18F2BECF00377B3F /* Window.xib in Resources */,
+				A4CC3CF118F40AE600C2B369 /* SPTableViewCell.xib in Resources */,
+				A4CC3CEB18F4033500C2B369 /* SPDOffersViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -809,7 +852,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4263EA918F2BE1C00377B3F /* SPDRootViewController.m in Sources */,
+				A4CC3CF018F40AE600C2B369 /* SPTableViewCell.m in Sources */,
+				A4CC3CEA18F4033500C2B369 /* SPDOffersViewController.m in Sources */,
+				A4CC3CE518F401CD00C2B369 /* SPDRootViewController.m in Sources */,
 				A4263EA818F2BE1C00377B3F /* SPDAppDelegate.m in Sources */,
 				A4263E8018F2BD9500377B3F /* main.m in Sources */,
 				A4263EB318F2BFAC00377B3F /* SPDDataStore.m in Sources */,

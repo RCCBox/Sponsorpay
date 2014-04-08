@@ -65,7 +65,7 @@ NSURLConnectionDataDelegate
   return self;
 }
 
-#pragma mark - Template methods
+#pragma mark - Template methods (Disabled)
 
 - (instancetype)init
 {
@@ -139,12 +139,28 @@ NSURLConnectionDataDelegate
     if (offer) [mOffersArray addObject:offer];
   }
   
+  // No offers found - create error object if possible
+  if (![mOffersArray count]) {
+    
+    // Proceed if server did send error message
+    NSString *message = jsonDict[@"message"];
+    if (message) {
+      SPError *err =
+        [SPError errorWithCode:SPErrorMissingExpectedValue
+                          info:@{NSLocalizedDescriptionKey: message}];
+      
+      // Callback delegate
+      [self SP_callbackDelegateWithError:err];
+      return;
+    }
+  }
+  
   // Callback delegate
   if (error) {
     
     // Convert data to JSON string
     NSString *jsonString =
-    [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+      [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     SPErrorAssertTrueThrowAndReturn(jsonString, SPErrorMissingExpectedValue);
     
     // Setup error
