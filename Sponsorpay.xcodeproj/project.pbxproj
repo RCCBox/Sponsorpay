@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		A4263E3418F2BBDE00377B3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E3318F2BBDE00377B3F /* Foundation.framework */; };
-		A4263E3B18F2BBDE00377B3F /* Sponsorpay.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263E3A18F2BBDE00377B3F /* Sponsorpay.m */; };
 		A4263E4218F2BBDE00377B3F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E4118F2BBDE00377B3F /* XCTest.framework */; };
 		A4263E4318F2BBDE00377B3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E3318F2BBDE00377B3F /* Foundation.framework */; };
 		A4263E4518F2BBDE00377B3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E4418F2BBDE00377B3F /* UIKit.framework */; };
@@ -147,8 +146,6 @@
 		A4263E3018F2BBDE00377B3F /* libSponsorpay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSponsorpay.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4263E3318F2BBDE00377B3F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A4263E3718F2BBDE00377B3F /* Sponsorpay-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sponsorpay-Prefix.pch"; sourceTree = "<group>"; };
-		A4263E3818F2BBDE00377B3F /* Sponsorpay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sponsorpay.h; sourceTree = "<group>"; };
-		A4263E3A18F2BBDE00377B3F /* Sponsorpay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sponsorpay.m; sourceTree = "<group>"; };
 		A4263E4018F2BBDE00377B3F /* SponsorpayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SponsorpayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4263E4118F2BBDE00377B3F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A4263E4418F2BBDE00377B3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -305,8 +302,6 @@
 			isa = PBXGroup;
 			children = (
 				A4263E5918F2BC2000377B3F /* Classes */,
-				A4263E3818F2BBDE00377B3F /* Sponsorpay.h */,
-				A4263E3A18F2BBDE00377B3F /* Sponsorpay.m */,
 				A4263E3618F2BBDE00377B3F /* Supporting Files */,
 			);
 			path = Sponsorpay;
@@ -907,7 +902,6 @@
 				A4263ECF18F2C35A00377B3F /* SPEnvPhoneInfo.m in Sources */,
 				A4263EDE18F2C54C00377B3F /* SPString.m in Sources */,
 				A4263EE218F2C5D000377B3F /* SPError.m in Sources */,
-				A4263E3B18F2BBDE00377B3F /* Sponsorpay.m in Sources */,
 				A484DB5918F2F537002192D8 /* SPOffer.m in Sources */,
 				A4263ECE18F2C35A00377B3F /* SPEnvNetworkInfo.m in Sources */,
 				A4263EE718F2C90E00377B3F /* SPLog.m in Sources */,
