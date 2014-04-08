@@ -1,3 +1,6 @@
 [submodule "SponsorpayTests/Vendor/Kiwi"]
 	path = SponsorpayTests/Vendor/Kiwi
 	url = https://github.com/allending/Kiwi.git
+[submodule "SponsorpayDemoApp/Vendor/EGOImageLoading"]
+	path = SponsorpayDemoApp/Vendor/EGOImageLoading
+	url = https://github.com/enormego/EGOImageLoading.git

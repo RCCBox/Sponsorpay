@@ -14,6 +14,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.050000000000000003" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Upx-Yx-TQT" customClass="EGOImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </imageView>
                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="3">
                         <rect key="frame" x="20" y="12" width="231" height="18"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -41,6 +45,7 @@
             <connections>
                 <outlet property="badgeLabel" destination="16" id="17"/>
                 <outlet property="detailLabel" destination="8" id="18"/>
+                <outlet property="thubnailView" destination="Upx-Yx-TQT" id="SbM-sQ-z33"/>
                 <outlet property="titleLabel" destination="3" id="19"/>
             </connections>
         </tableViewCell>

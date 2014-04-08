@@ -51,6 +51,11 @@
 		A4CC3CEB18F4033500C2B369 /* SPDOffersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CC3CE918F4033500C2B369 /* SPDOffersViewController.xib */; };
 		A4CC3CF018F40AE600C2B369 /* SPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CEE18F40AE600C2B369 /* SPTableViewCell.m */; };
 		A4CC3CF118F40AE600C2B369 /* SPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4CC3CEF18F40AE600C2B369 /* SPTableViewCell.xib */; };
+		A4CC3D0518F4148400C2B369 /* EGOCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CF918F4148400C2B369 /* EGOCache.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4CC3D0618F4148400C2B369 /* EGOImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CFC18F4148400C2B369 /* EGOImageButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4CC3D0718F4148400C2B369 /* EGOImageLoadConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CFF18F4148400C2B369 /* EGOImageLoadConnection.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4CC3D0818F4148400C2B369 /* EGOImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3D0118F4148400C2B369 /* EGOImageLoader.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A4CC3D0918F4148400C2B369 /* EGOImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3D0418F4148400C2B369 /* EGOImageView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +207,16 @@
 		A4CC3CED18F40AE600C2B369 /* SPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPTableViewCell.h; sourceTree = "<group>"; };
 		A4CC3CEE18F40AE600C2B369 /* SPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPTableViewCell.m; sourceTree = "<group>"; };
 		A4CC3CEF18F40AE600C2B369 /* SPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPTableViewCell.xib; sourceTree = "<group>"; };
+		A4CC3CF818F4148400C2B369 /* EGOCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOCache.h; sourceTree = "<group>"; };
+		A4CC3CF918F4148400C2B369 /* EGOCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOCache.m; sourceTree = "<group>"; };
+		A4CC3CFB18F4148400C2B369 /* EGOImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageButton.h; sourceTree = "<group>"; };
+		A4CC3CFC18F4148400C2B369 /* EGOImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageButton.m; sourceTree = "<group>"; };
+		A4CC3CFE18F4148400C2B369 /* EGOImageLoadConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoadConnection.h; sourceTree = "<group>"; };
+		A4CC3CFF18F4148400C2B369 /* EGOImageLoadConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoadConnection.m; sourceTree = "<group>"; };
+		A4CC3D0018F4148400C2B369 /* EGOImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageLoader.h; sourceTree = "<group>"; };
+		A4CC3D0118F4148400C2B369 /* EGOImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageLoader.m; sourceTree = "<group>"; };
+		A4CC3D0318F4148400C2B369 /* EGOImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGOImageView.h; sourceTree = "<group>"; };
+		A4CC3D0418F4148400C2B369 /* EGOImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGOImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -340,6 +355,7 @@
 			isa = PBXGroup;
 			children = (
 				A4263EA118F2BE1C00377B3F /* Classes */,
+				A4CC3CF218F4145B00C2B369 /* Vendor */,
 				A4263E8518F2BD9500377B3F /* Images.xcassets */,
 				A4263E7A18F2BD9500377B3F /* Supporting Files */,
 			);
@@ -630,6 +646,67 @@
 			path = SPDOffersViewController/SPTableViewCell;
 			sourceTree = "<group>";
 		};
+		A4CC3CF218F4145B00C2B369 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CF318F4146500C2B369 /* EGOImageLoading */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		A4CC3CF318F4146500C2B369 /* EGOImageLoading */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CF718F4148400C2B369 /* EGOCache */,
+				A4CC3CFA18F4148400C2B369 /* EGOImageButton */,
+				A4CC3CFD18F4148400C2B369 /* EGOImageLoader */,
+				A4CC3D0218F4148400C2B369 /* EGOImageView */,
+			);
+			name = EGOImageLoading;
+			sourceTree = "<group>";
+		};
+		A4CC3CF718F4148400C2B369 /* EGOCache */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CF818F4148400C2B369 /* EGOCache.h */,
+				A4CC3CF918F4148400C2B369 /* EGOCache.m */,
+			);
+			name = EGOCache;
+			path = Vendor/EGOImageLoading/EGOCache;
+			sourceTree = "<group>";
+		};
+		A4CC3CFA18F4148400C2B369 /* EGOImageButton */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CFB18F4148400C2B369 /* EGOImageButton.h */,
+				A4CC3CFC18F4148400C2B369 /* EGOImageButton.m */,
+			);
+			name = EGOImageButton;
+			path = Vendor/EGOImageLoading/EGOImageButton;
+			sourceTree = "<group>";
+		};
+		A4CC3CFD18F4148400C2B369 /* EGOImageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CFE18F4148400C2B369 /* EGOImageLoadConnection.h */,
+				A4CC3CFF18F4148400C2B369 /* EGOImageLoadConnection.m */,
+				A4CC3D0018F4148400C2B369 /* EGOImageLoader.h */,
+				A4CC3D0118F4148400C2B369 /* EGOImageLoader.m */,
+			);
+			name = EGOImageLoader;
+			path = Vendor/EGOImageLoading/EGOImageLoader;
+			sourceTree = "<group>";
+		};
+		A4CC3D0218F4148400C2B369 /* EGOImageView */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3D0318F4148400C2B369 /* EGOImageView.h */,
+				A4CC3D0418F4148400C2B369 /* EGOImageView.m */,
+			);
+			name = EGOImageView;
+			path = Vendor/EGOImageLoading/EGOImageView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -855,9 +932,14 @@
 				A4CC3CF018F40AE600C2B369 /* SPTableViewCell.m in Sources */,
 				A4CC3CEA18F4033500C2B369 /* SPDOffersViewController.m in Sources */,
 				A4CC3CE518F401CD00C2B369 /* SPDRootViewController.m in Sources */,
+				A4CC3D0518F4148400C2B369 /* EGOCache.m in Sources */,
+				A4CC3D0818F4148400C2B369 /* EGOImageLoader.m in Sources */,
 				A4263EA818F2BE1C00377B3F /* SPDAppDelegate.m in Sources */,
+				A4CC3D0918F4148400C2B369 /* EGOImageView.m in Sources */,
+				A4CC3D0618F4148400C2B369 /* EGOImageButton.m in Sources */,
 				A4263E8018F2BD9500377B3F /* main.m in Sources */,
 				A4263EB318F2BFAC00377B3F /* SPDDataStore.m in Sources */,
+				A4CC3D0718F4148400C2B369 /* EGOImageLoadConnection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

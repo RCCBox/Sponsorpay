@@ -78,6 +78,7 @@
     NSArray *views = [bundle loadNibNamed:@"SPTableViewCell" owner:self options:nil];
     cell = [views objectAtIndex:0];
   }
+  
   // Get matching offer
   SPOffer *offer = self.offersArray[indexPath.row];
   
@@ -85,6 +86,7 @@
   cell.titleLabel.text = offer.title;
   cell.detailLabel.text = offer.teaser;
   cell.badgeLabel.text = [offer.payout description];
+  cell.thubnailView.imageURL = offer.thumbnailURL;
 	
 	return cell;
 }
