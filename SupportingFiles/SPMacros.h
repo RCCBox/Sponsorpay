@@ -33,6 +33,16 @@
     } \
   }while(0)
 
+// SPErrorAssertTrueThrowAndReturnNo
+#define SPErrorAssertTrueThrowAndReturnNo(obj, code) \
+  do{ \
+    if (!obj) { \
+      [[SPError errorWithCode:code info: SPErrorDict(obj)] throw]; \
+      return NO; \
+    } \
+  }while(0)
+
+
 # pragma mark - Error (Exceptions)
 
 // SPErrorThrow

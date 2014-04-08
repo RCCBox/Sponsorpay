@@ -7,4 +7,8 @@
      withQueryDict:(NSDictionary *)dict
          andAPIKey:(NSString *)APIkey;
 
++ (BOOL)isResponseDataValid:(NSData *)data
+                  forAPIKey:(NSString *)apiKey
+                    andHash:(NSString *)responseHash;
+
 @end

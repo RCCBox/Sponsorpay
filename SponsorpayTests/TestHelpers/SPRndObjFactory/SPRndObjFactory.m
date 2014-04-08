@@ -7,12 +7,12 @@
 
 + (NSInteger)rndNSInt
 {
-  return (NSInteger)floor(arc4random_uniform([[self class] TM_UInt32Max]));
+  return (NSInteger)floor(arc4random_uniform([[self class] SP_UInt32Max]));
 }
 
 + (NSUInteger)rndNSUInt
 {
-  return (NSUInteger)floor(arc4random_uniform([[self class] TM_UInt32Max]));
+  return (NSUInteger)floor(arc4random_uniform([[self class] SP_UInt32Max]));
 }
 
 + (NSUInteger)rndNSUInt:(NSUInteger)max
@@ -33,7 +33,7 @@
 
 + (NSNumber *)rndNumberUInt
 {
-  u_int32_t max = floor(arc4random_uniform([[self class] TM_UInt32Max]));
+  u_int32_t max = floor(arc4random_uniform([[self class] SP_UInt32Max]));
   return [NSNumber numberWithUnsignedInteger:max];
 }
 
@@ -50,7 +50,7 @@
 
 + (NSNumber *)rndNumberDouble
 {
-  return [NSNumber numberWithDouble:[[self class] TM_rndDouble]];
+  return [NSNumber numberWithDouble:[[self class] SP_rndDouble]];
 }
 
 + (NSString *)rndStr
@@ -73,7 +73,7 @@
 
 + (NSDate *)rndDate
 {
-  return [NSDate dateWithTimeIntervalSince1970:[[self class] TM_rndDouble]];
+  return [NSDate dateWithTimeIntervalSince1970:[[self class] SP_rndDouble]];
 }
 
 + (NSData *)rndData
@@ -145,14 +145,14 @@
 
 # pragma mark - Private helpers
 
-+ (u_int32_t)TM_UInt32Max
++ (u_int32_t)SP_UInt32Max
 {
   return 4294967295;
 }
 
 # pragma mark - Object generators (Private)
 
-+ (double)TM_rndDouble
++ (double)SP_rndDouble
 {
   return floorf((double)arc4random_uniform(DBL_MAX) * 100.0);
 }

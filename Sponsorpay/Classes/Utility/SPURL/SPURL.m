@@ -62,4 +62,23 @@
   return queryURL;
 }
 
++ (BOOL)isResponseDataValid:(NSData *)data
+                  forAPIKey:(NSString *)apiKey
+                    andHash:(NSString *)responseHash
+{
+  // Convert data to string
+  NSString *string =
+  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+  SPErrorAssertTrueThrowAndReturnNo(string, SPErrorMissingExpectedValue);
+  
+  // Concatenate API key to response and hash result
+  string = [string stringByAppendingString:apiKey];
+  SPErrorAssertTrueThrowAndReturnNo(string, SPErrorMissingExpectedValue);
+  NSString *hash = [SPString sha1:string];
+  
+  // Return result
+  BOOL isEqual = [hash isEqualToString:responseHash];
+  return isEqual;
+}
+
 @end

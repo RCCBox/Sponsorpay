@@ -32,9 +32,8 @@ NSURLConnectionDataDelegate
 @property (nonatomic, copy, readwrite) NSString *SP_APIKey;
 
 // Offers (Data)
-
-@property (nonatomic, strong, readwrite) NSMutableData *data;
-@property (nonatomic, assign, readwrite) BOOL isLoadingData;
+@property (nonatomic, strong, readwrite) NSMutableData *SP_data;
+@property (nonatomic, strong, readwrite) NSURLResponse *SP_response;
 
 @end
 
@@ -117,9 +116,10 @@ NSURLConnectionDataDelegate
 #pragma mark - Private helpers (Data parsing)
 
 - (void)SP_callbackDelegateWithData:(NSData *)data
+                        andResponse:(NSURLResponse *)response
 {
   // No offers - callback delegate without offers
-  if (!data) {
+  if ((!data) || (![data length])) {
     [self SP_callbackDelegateWithOffers:nil];
     return;
   }
@@ -145,9 +145,8 @@ NSURLConnectionDataDelegate
     // Proceed if server did send error message
     NSString *message = jsonDict[@"message"];
     if (message) {
-      SPError *err =
-        [SPError errorWithCode:SPErrorMissingExpectedValue
-                          info:@{NSLocalizedDescriptionKey: message}];
+      SPError *err = [SPError errorWithCode:SPErrorMissingExpectedValue
+                                       info:@{NSLocalizedDescriptionKey: message}];
       
       // Callback delegate
       [self SP_callbackDelegateWithError:err];
@@ -173,6 +172,24 @@ NSURLConnectionDataDelegate
     [self SP_callbackDelegateWithError:err];
     
   } else {
+    
+    // Check if response is valid
+    NSDictionary *headers = [(NSHTTPURLResponse *)response allHeaderFields];
+    NSString *signature = headers[@"X-Sponsorpay-Response-Signature"];
+    BOOL isValid = [SPURL isResponseDataValid:data
+                                    forAPIKey:self.SP_APIKey
+                                      andHash:signature];
+    
+    // Response is invalid
+    if (!isValid) {
+      NSString *message = @"Response contains invalid signature.";
+      SPError *err = [SPError errorWithCode:SPErrorMissingExpectedValue
+                                       info:@{NSLocalizedDescriptionKey: message}];
+      
+      // Callback delegate
+      [self SP_callbackDelegateWithError:err];
+      return;
+    }
     
     // Callback delegate with offers
     NSArray *offersArray = [mOffersArray copy];
@@ -207,11 +224,21 @@ NSURLConnectionDataDelegate
   [self SP_callbackDelegateWithError:error];
 }
 
+- (void)connection:(NSURLConnection *)connection
+  didReceiveResponse:(NSURLResponse *)response
+{
+  // Store response data for later evaluation
+  self.SP_response = response;
+}
+
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-  // Callback data to offers and callback delegate
-  [self SP_callbackDelegateWithData:self.data];
-  self.data = nil;
+  // Callback delegate with offers
+  [self SP_callbackDelegateWithData:self.SP_data andResponse:self.SP_response];
+  
+  // Erase stored request data
+  self.SP_data = nil;
+  self.SP_response = nil;
 }
 
 #pragma mark - <NSURLConnectionDataDelegate>
@@ -219,8 +246,8 @@ NSURLConnectionDataDelegate
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
 {
   // Incremental store data
-  if (!self.data) self.data = [NSMutableData data];
-  [self.data appendData:data];
+  if (!self.SP_data) self.SP_data = [NSMutableData data];
+  [self.SP_data appendData:data];
 }
 
 @end

@@ -41,10 +41,11 @@ describe(@"SPAPIControllerSpec", ^{
     __block id delegate = [KWMock mockForProtocol:@protocol(SPAPIControllerDelegate)];
     __block SPAPIController *controller;
     beforeEach(^{
+      NSString *key = @"1c915e3b5d42d05136185030892fbb846c278927";
       controller = [[SPAPIController alloc] initWithDelegate:delegate
                                                          uID:uID
                                                        appID:appID
-                                                      APIKey:[SPRndObjFactory rndStr]];
+                                                      APIKey:key];
     });
     
     context(@"offers API", ^{
@@ -53,55 +54,72 @@ describe(@"SPAPIControllerSpec", ^{
         
         context(@"when remote host is available", ^{
           
-          context(@"when offers are available", ^{
-            
-            // Make offers available
-            // Swizzeling:
-            // NSURLConnection: @selector(initWithRequest:delegate:)
-            __block SPMethodSwizzleRevertBlock revertNSURLConnection;
-            beforeEach(^{
-              SEL selector = @selector(initWithRequest:delegate:);
-              revertNSURLConnection = SPSwizzleMethodWithBlock
-              (NSURLConnection.class, selector, NO,
-               ^(NSURLConnection *con, NSURLRequest *req, id delegate) {
-                 
-                 // Callback delegate
-                 NSData *data = [SPDataFactory offersData];
-                 [delegate connection:con didReceiveData:data];
-                 [delegate connectionDidFinishLoading:con];
-               });
-            });
-            
-            it(@"invokes expected delegate method", ^{
+          context(@"when remote host returns expeted signature", ^{
+
+            context(@"when offers are available", ^{
               
-              SEL sel = @selector(SPAPIControllerDidFetchOffers:);
-              [[delegate should] receive:sel];
-              [controller fetchOffers];
-            });
-          });
-          
-          context(@"when no offers are available", ^{
-            
-            // Make offers unavailable
-            // Swizzeling:
-            // NSURLConnection: @selector(initWithRequest:delegate:)
-            __block SPMethodSwizzleRevertBlock revertNSURLConnection;
-            beforeEach(^{
-              SEL selector = @selector(initWithRequest:delegate:);
-              revertNSURLConnection = SPSwizzleMethodWithBlock
-              (NSURLConnection.class, selector, NO,
-               ^(NSURLConnection *con, NSURLRequest *req, id delegate) {
-                 
-                 // Callback delegate
-                 [delegate connectionDidFinishLoading:con];
-               });
-            });
-            
-            it(@"invokes expected delegate method", ^{
+              // Make offers available
+              // Swizzeling:
+              // NSURLConnection: @selector(initWithRequest:delegate:)
+              __block SPMethodSwizzleRevertBlock revertNSURLConnection;
+              beforeEach(^{
+                SEL selector = @selector(initWithRequest:delegate:);
+                revertNSURLConnection = SPSwizzleMethodWithBlock
+                (NSURLConnection.class, selector, NO,
+                 ^(NSURLConnection *con, NSURLRequest *req, id delegate) {
+                   
+                   // Callback delegate
+                   NSData *data = [SPDataFactory offersData];
+                   id responseMock = [NSURLResponse nullMock];
+                   NSDictionary *dict =
+                    @{@"X-Sponsorpay-Response-Signature":
+                        @"8ce2727361c58102d37a19ef5299286c368ac01a"};
+                   SEL sel = @selector(allHeaderFields);
+                   [[responseMock should] receive:sel andReturn:dict];
+                   [delegate connection:con didReceiveData:data];
+                   [delegate connection:con didReceiveResponse:responseMock];
+                   [delegate connectionDidFinishLoading:con];
+                   
+                   return con;
+                 });
+              });
               
-              SEL sel = @selector(SPAPIControllerDidFetchOffers:);
-              [[delegate should] receive:sel];
-              [controller fetchOffers];
+              it(@"invokes expected delegate method", ^{
+                
+                SEL sel = @selector(SPAPIControllerDidFetchOffers:);
+                [[delegate should] receive:sel];
+                [controller fetchOffers];
+              });
+            });
+            
+            context(@"when no offers are available", ^{
+              
+              // Make offers unavailable
+              // Swizzeling:
+              // NSURLConnection: @selector(initWithRequest:delegate:)
+              __block SPMethodSwizzleRevertBlock revertNSURLConnection;
+              beforeEach(^{
+                SEL selector = @selector(initWithRequest:delegate:);
+                revertNSURLConnection = SPSwizzleMethodWithBlock
+                (NSURLConnection.class, selector, NO,
+                 ^(NSURLConnection *con, NSURLRequest *req, id delegate) {
+                   
+                   // Callback delegate
+                   id responseMock = [NSURLResponse nullMock];
+                   [delegate connection:con didReceiveData:[NSData data]];
+                   [delegate connection:con didReceiveResponse:responseMock];
+                   [delegate connectionDidFinishLoading:con];
+                   
+                   return con;
+                 });
+              });
+              
+              it(@"invokes expected delegate method", ^{
+                
+                SEL sel = @selector(SPAPIControllerDidFetchOffers:);
+                [[delegate should] receive:sel];
+                [controller fetchOffers];
+              });
             });
           });
         });
