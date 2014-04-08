@@ -3,4 +3,4 @@
 	url = https://github.com/allending/Kiwi.git
 [submodule "SponsorpayDemoApp/Vendor/EGOImageLoading"]
 	path = SponsorpayDemoApp/Vendor/EGOImageLoading
-	url = https://github.com/enormego/EGOImageLoading.git
+url=https://github.com/schaechtele/EGOImageLoading.git
