@@ -1,0 +1,3 @@
+[submodule "SponsorpayTests/Vendor/Kiwi"]
+	path = SponsorpayTests/Vendor/Kiwi
+	url = https://github.com/allending/Kiwi.git
