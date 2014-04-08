@@ -26,7 +26,7 @@
 {
   [super viewDidLoad];
   
-  [self SP_setupModel];
+  // [self SP_setupModel];
 }
 
 #pragma mark - Private helpers (Model setup)
@@ -52,6 +52,7 @@
 {
   ;
 }
+
 - (void)SPAPIControllerFetchOffersDidFailWithError:(NSError *)error
 {
   ;

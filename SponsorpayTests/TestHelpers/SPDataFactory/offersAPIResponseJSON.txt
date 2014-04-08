@@ -1,0 +1,747 @@
+{
+  "code": "OK",
+  "message": "Ok",
+  "pages": 1,
+  "count": 25,
+  "information": {
+    "language": "DE",
+    "app_name": "VC Backend Test",
+    "appid": 2070,
+    "country": "DE",
+    "support_url": "http://api.sponsorpay.com/support?appid=2070&feed=on&mobile=on&uid=spiderman",
+    "virtual_currency": "VCS Coins"
+  },
+  "offers": [
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 12,
+      "time_to_payout": {
+        "amount": 900,
+        "readable": "15 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 216746,
+      "title": "Dolphin Browser for Android",
+      "thumbnail": {
+        "lowres": "http://cdn4.sponsorpay.com/app_icons/8339/small_mobile_icon.png",
+        "hires": "http://cdn4.sponsorpay.com/app_icons/8339/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/f20e95d1c3d4f4a6/mobile/DE/2070/offers/216746",
+      "store_id": "mobi.mgeek.TunnyBrowser"
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 9,
+      "time_to_payout": {
+        "amount": 600,
+        "readable": "10 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 219545,
+      "title": "Mobogenie Market",
+      "thumbnail": {
+        "lowres": "http://cdn4.sponsorpay.com/app_icons/7762/small_mobile_icon.png",
+        "hires": "http://cdn4.sponsorpay.com/app_icons/7762/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/4f6c21e9ef294e90/mobile/DE/2070/offers/219545",
+      "store_id": "com.mobogenie.markets"
+    },
+    {
+      "teaser": "Download and start.",
+      "payout": 6,
+      "time_to_payout": {
+        "amount": 300,
+        "readable": "5 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 218297,
+      "title": "Battery Saver&Widgets",
+      "thumbnail": {
+        "lowres": "http://cdn1.sponsorpay.com/assets/39740/battery_saver_square_60.PNG",
+        "hires": "http://cdn1.sponsorpay.com/assets/39740/battery_saver_square_175.PNG"
+      },
+      "required_actions": "Download and start.",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/021019907825492c/mobile/DE/2070/offers/218297",
+      "store_id": ""
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 23,
+      "time_to_payout": {
+        "amount": 2400,
+        "readable": "40 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 106,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 109,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 215891,
+      "title": "Castle Clash",
+      "thumbnail": {
+        "lowres": "http://cdn3.sponsorpay.com/app_icons/6078/small_mobile_icon.png",
+        "hires": "http://cdn3.sponsorpay.com/app_icons/6078/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/4a3a525ca5de84c2/mobile/DE/2070/offers/215891",
+      "store_id": "com.igg.castleclash"
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 13,
+      "time_to_payout": {
+        "amount": 600,
+        "readable": "10 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 106,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 107,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 109,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 217757,
+      "title": "Slot City - Free Casino Slots",
+      "thumbnail": {
+        "lowres": "http://cdn2.sponsorpay.com/app_icons/5920/small_mobile_icon.png",
+        "hires": "http://cdn2.sponsorpay.com/app_icons/5920/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/21f8485509f84361/mobile/DE/2070/offers/217757",
+      "store_id": "com.dragonplay.slotcity"
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 11,
+      "time_to_payout": {
+        "amount": 600,
+        "readable": "10 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 106,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 107,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 109,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 222254,
+      "title": "Texas HoldEm Poker Deluxe",
+      "thumbnail": {
+        "lowres": "http://cdn2.sponsorpay.com/app_icons/2071/small_mobile_icon.png",
+        "hires": "http://cdn2.sponsorpay.com/app_icons/2071/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/b4ae69d82469813e/mobile/DE/2070/offers/222254",
+      "store_id": "com.igg.pokerdeluxe"
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 13,
+      "time_to_payout": {
+        "amount": 2100,
+        "readable": "35 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 106,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 107,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 109,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 217790,
+      "title": "Live Holdem Poker Pro",
+      "thumbnail": {
+        "lowres": "http://cdn2.sponsorpay.com/app_icons/834/small_mobile_icon.png",
+        "hires": "http://cdn2.sponsorpay.com/app_icons/834/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/21fb58b5e29bf912/mobile/DE/2070/offers/217790",
+      "store_id": "com.dragonplay.liveholdempro"
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 11,
+      "time_to_payout": {
+        "amount": 1500,
+        "readable": "25 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 221801,
+      "title": "Smug Messenger",
+      "thumbnail": {
+        "lowres": "http://cdn2.sponsorpay.com/app_icons/11873/small_mobile_icon.png",
+        "hires": "http://cdn2.sponsorpay.com/app_icons/11873/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/c3beecd43b063538/mobile/DE/2070/offers/221801",
+      "store_id": "com.appredeem.smugchat"
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 22,
+      "time_to_payout": {
+        "amount": 2400,
+        "readable": "40 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 106,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 109,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 221339,
+      "title": "Galaxy Legend",
+      "thumbnail": {
+        "lowres": "http://cdn3.sponsorpay.com/app_icons/7466/small_mobile_icon.png",
+        "hires": "http://cdn3.sponsorpay.com/app_icons/7466/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/6b560d502861dfab/mobile/DE/2070/offers/221339",
+      "store_id": "com.tap4fun.galaxyempire2_android"
+    },
+    {
+      "teaser": "Registriere dich und nimm gewissenhaft an der Umfrage teil",
+      "payout": 46,
+      "time_to_payout": {
+        "amount": 1200,
+        "readable": "20 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 110,
+          "readable": "Umfragen"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 160900,
+      "title": "Survey Sampling - Umfrage",
+      "thumbnail": {
+        "lowres": "http://cdn4.sponsorpay.com/assets/321/Sampling_International_square_60.png",
+        "hires": "http://cdn4.sponsorpay.com/assets/321/Sampling_International_square_175.png"
+      },
+      "required_actions": "Registriere dich und nimm gewissenhaft an der Umfrage teil",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/5bf2c9a6c200aff5/mobile/DE/2070/offers/160900",
+      "store_id": ""
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 8,
+      "time_to_payout": {
+        "amount": 2700,
+        "readable": "einer Stunde"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 106,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 107,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 109,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 181938,
+      "title": "Bingo Bash - Free Bingo Casino",
+      "thumbnail": {
+        "lowres": "http://cdn3.sponsorpay.com/app_icons/5240/small_mobile_icon.png",
+        "hires": "http://cdn3.sponsorpay.com/app_icons/5240/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/7278ecab8474b2c6/mobile/DE/2070/offers/181938",
+      "store_id": "air.com.bitrhymes.bingo"
+    },
+    {
+      "teaser": "Melde dich für Newsletter deiner Wahl an und bestätige deine Email",
+      "payout": 15,
+      "time_to_payout": {
+        "amount": 7200,
+        "readable": "2 Stunden"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 105,
+          "readable": "Registrierung"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 99852,
+      "title": "Katalog Kiosk",
+      "thumbnail": {
+        "lowres": "http://cdn1.sponsorpay.com/assets/71/kiosk_square_60.gif",
+        "hires": "http://cdn1.sponsorpay.com/assets/71/kiosk_square_175.gif"
+      },
+      "required_actions": "Melde dich für Newsletter deiner Wahl an und bestätige deine Email",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/6e2cff0f763680fc/mobile/DE/2070/offers/99852",
+      "store_id": ""
+    },
+    {
+      "teaser": "Anmeldung bestätigen und Zahlungsdaten hinterlegen. Du musst 8.99€ bezahlen",
+      "payout": 449,
+      "time_to_payout": {
+        "amount": 3600,
+        "readable": "einer Stunde"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 102,
+          "readable": "Proben"
+        }
+      ],
+      "offer_id": 161572,
+      "title": "Watchever - 2 Monate für 1",
+      "thumbnail": {
+        "lowres": "http://cdn2.sponsorpay.com/assets/35995/120x60_watchever_A_square_60.jpg",
+        "hires": "http://cdn2.sponsorpay.com/assets/35995/120x60_watchever_A_square_175.jpg"
+      },
+      "required_actions": "Anmeldung bestätigen und Zahlungsdaten hinterlegen. Du musst 8.99€ bezahlen",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/5a639827cc2c4092/mobile/DE/2070/offers/161572/preview",
+      "store_id": ""
+    },
+    {
+      "teaser": "Lade die App herunter und ERSTELLE einen Account",
+      "payout": 17,
+      "time_to_payout": {
+        "amount": 1200,
+        "readable": "20 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 111,
+          "readable": "Registrierung"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 53107,
+      "title": "LOVOO Chat, Flirt, Dating App",
+      "thumbnail": {
+        "lowres": "http://cdn3.sponsorpay.com/app_icons/873/small_mobile_icon.png",
+        "hires": "http://cdn3.sponsorpay.com/app_icons/873/big_mobile_icon.png"
+      },
+      "required_actions": "Lade die App herunter und ERSTELLE einen Account",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/a45ec5fe3e294587/mobile/DE/2070/offers/53107/preview",
+      "store_id": "net.lovoo.android"
+    },
+    {
+      "teaser": "E-Mail & Festnetz-Nummer eingeben, den per Telefon erhaltenen Code eingeben",
+      "payout": 110,
+      "time_to_payout": {
+        "amount": 5100,
+        "readable": "einer Stunde"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 105,
+          "readable": "Registrierung"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 202076,
+      "title": "Telekom Gewinnspiel: Smartphone",
+      "thumbnail": {
+        "lowres": "http://cdn2.sponsorpay.com/assets/39719/telekomplaysi_square_60.gif",
+        "hires": "http://cdn2.sponsorpay.com/assets/39719/telekomplaysi_square_175.gif"
+      },
+      "required_actions": "E-Mail & Festnetz-Nummer eingeben, den per Telefon erhaltenen Code eingeben",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/0edd14f3a72c522e/mobile/DE/2070/offers/202076/preview",
+      "store_id": ""
+    },
+    {
+      "teaser": "40 EUR Mindestbestellwert. Jetzt mit 7 € Rabatt für Neukunden! ",
+      "payout": 411,
+      "time_to_payout": {
+        "amount": 2100,
+        "readable": "35 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 103,
+          "readable": "Einkaufen"
+        }
+      ],
+      "offer_id": 59513,
+      "title": "AllYouNeed - Schluss mit Schleppen!",
+      "thumbnail": {
+        "lowres": "http://cdn2.sponsorpay.com/assets/42302/allyouneed_square_60.jpg",
+        "hires": "http://cdn2.sponsorpay.com/assets/42302/allyouneed_square_175.jpg"
+      },
+      "required_actions": "40 EUR Mindestbestellwert. Jetzt mit 7 € Rabatt für Neukunden! ",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/1e405a4bf61e502d/mobile/DE/2070/offers/59513",
+      "store_id": ""
+    },
+    {
+      "teaser": "Bestelle mit deinen korrekten Daten das Angebot von o2",
+      "payout": 107,
+      "time_to_payout": {
+        "amount": 6300,
+        "readable": "2 Stunden"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 105,
+          "readable": "Registrierung"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 40878,
+      "title": "o2 Gratis Prepaid-Karte mit Bonus",
+      "thumbnail": {
+        "lowres": "http://cdn3.sponsorpay.com/assets/15196/offerwall-02_square_60.jpg",
+        "hires": "http://cdn3.sponsorpay.com/assets/15196/offerwall-02_square_175.jpg"
+      },
+      "required_actions": "Bestelle mit deinen korrekten Daten das Angebot von o2",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/d1bfbb41b96ea481/mobile/DE/2070/offers/40878",
+      "store_id": ""
+    },
+    {
+      "teaser": "Bestelle einen 100 € Amazon Gutschein! ",
+      "payout": 334,
+      "time_to_payout": {
+        "amount": 300,
+        "readable": "5 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 103,
+          "readable": "Einkaufen"
+        }
+      ],
+      "offer_id": 30686,
+      "title": "Amazon.de Geschenkgutschein",
+      "thumbnail": {
+        "lowres": "http://cdn3.sponsorpay.com/assets/8296/amazon_100_square_60.png",
+        "hires": "http://cdn3.sponsorpay.com/assets/8296/amazon_100_square_175.png"
+      },
+      "required_actions": "Bestelle einen 100 € Amazon Gutschein! ",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/3e5cd4b704ee6442/mobile/DE/2070/offers/30686",
+      "store_id": ""
+    },
+    {
+      "teaser": "Registriere dich, bestätige Deine E-Mailadresse und nimm an Umfragen teil!",
+      "payout": 26,
+      "time_to_payout": {
+        "amount": 108300,
+        "readable": "einem Tag"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 105,
+          "readable": "Registrierung"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 185333,
+      "title": "EntscheiderClub - Umfrage",
+      "thumbnail": {
+        "lowres": "http://cdn3.sponsorpay.com/assets/27245/entscheiderclub_square_60.gif",
+        "hires": "http://cdn3.sponsorpay.com/assets/27245/entscheiderclub_square_175.gif"
+      },
+      "required_actions": "Registriere dich, bestätige Deine E-Mailadresse und nimm an Umfragen teil!",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/a029cd42dc3e6539/mobile/DE/2070/offers/185333",
+      "store_id": ""
+    },
+    {
+      "teaser": "Bestelle mit korrekten Kontaktdaten und gültigen Zahlungsinformationen",
+      "payout": 735,
+      "time_to_payout": {
+        "amount": 0,
+        "readable": "einer Minute"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 103,
+          "readable": "Einkaufen"
+        }
+      ],
+      "offer_id": 34200,
+      "title": "Zalando Geschenkgutschein",
+      "thumbnail": {
+        "lowres": "http://cdn4.sponsorpay.com/assets/32130/karte_web_zalando_frei_10_square_60.jpg",
+        "hires": "http://cdn4.sponsorpay.com/assets/32130/karte_web_zalando_frei_10_square_175.jpg"
+      },
+      "required_actions": "Bestelle mit korrekten Kontaktdaten und gültigen Zahlungsinformationen",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/bfc6d23790ad2ae1/mobile/DE/2070/offers/34200",
+      "store_id": ""
+    },
+    {
+      "teaser": "Melde Dich für die Bosch Community an!",
+      "payout": 23,
+      "time_to_payout": {
+        "amount": 0,
+        "readable": "einer Minute"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 105,
+          "readable": "Registrierung"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 76975,
+      "title": "1-2-do.com - Jetzt mitmachen!",
+      "thumbnail": {
+        "lowres": "http://cdn2.sponsorpay.com/assets/18772/download_square_60.jpg",
+        "hires": "http://cdn2.sponsorpay.com/assets/18772/download_square_175.jpg"
+      },
+      "required_actions": "Melde Dich für die Bosch Community an!",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/a43020f6dc469fa0/mobile/DE/2070/offers/76975",
+      "store_id": ""
+    },
+    {
+      "teaser": "Registriere dich mit korrekten Daten und spiele bis du 500 Punkte erreichst",
+      "payout": 209,
+      "time_to_payout": {
+        "amount": 18000,
+        "readable": "5 Stunden"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 105,
+          "readable": "Registrierung"
+        },
+        {
+          "offer_type_id": 106,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 109,
+          "readable": "Spiele"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 144666,
+      "title": "Grepolis - Jetzt kostenlos spielen!",
+      "thumbnail": {
+        "lowres": "http://cdn4.sponsorpay.com/assets/9920/Grepolis_square_60.png",
+        "hires": "http://cdn4.sponsorpay.com/assets/9920/Grepolis_square_175.png"
+      },
+      "required_actions": "Registriere dich mit korrekten Daten und spiele bis du 500 Punkte erreichst",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/3aa3008ddefdd9ee/mobile/DE/2070/offers/144666/preview",
+      "store_id": ""
+    },
+    {
+      "teaser": "Download, register and purchase a book of your choice",
+      "payout": 315,
+      "time_to_payout": {
+        "amount": 600,
+        "readable": "10 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 103,
+          "readable": "Einkaufen"
+        }
+      ],
+      "offer_id": 112067,
+      "title": "Kobo Books",
+      "thumbnail": {
+        "lowres": "http://cdn1.sponsorpay.com/app_icons/4328/small_mobile_icon.png",
+        "hires": "http://cdn1.sponsorpay.com/app_icons/4328/big_mobile_icon.png"
+      },
+      "required_actions": "Download, register and purchase a book of your choice",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/b71e2e30e404859d/mobile/DE/2070/offers/112067/preview",
+      "store_id": "com.kobobooks.android"
+    },
+    {
+      "teaser": "Einfach Bestellformular ausfüllen und die Mail von O2 bestätigen! ",
+      "payout": 127,
+      "time_to_payout": {
+        "amount": 3900,
+        "readable": "einer Stunde"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 105,
+          "readable": "Registrierung"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 84068,
+      "title": "O2 Loop: Gratis 10€ Prepaid Karten",
+      "thumbnail": {
+        "lowres": "http://cdn3.sponsorpay.com/assets/15196/offerwall-02_square_60.jpg",
+        "hires": "http://cdn3.sponsorpay.com/assets/15196/offerwall-02_square_175.jpg"
+      },
+      "required_actions": "Einfach Bestellformular ausfüllen und die Mail von O2 bestätigen! ",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/881f0a9540561587/mobile/DE/2070/offers/84068/preview",
+      "store_id": ""
+    },
+    {
+      "teaser": "Herunterladen und STARTEN",
+      "payout": 16,
+      "time_to_payout": {
+        "amount": 600,
+        "readable": "10 Minuten"
+      },
+      "offer_types": [
+        {
+          "offer_type_id": 101,
+          "readable": "Download"
+        },
+        {
+          "offer_type_id": 112,
+          "readable": "Gratis"
+        }
+      ],
+      "offer_id": 158900,
+      "title": "lieferando - Essen bestellen",
+      "thumbnail": {
+        "lowres": "http://cdn1.sponsorpay.com/app_icons/7406/small_mobile_icon.png",
+        "hires": "http://cdn1.sponsorpay.com/app_icons/7406/big_mobile_icon.png"
+      },
+      "required_actions": "Herunterladen und STARTEN",
+      "link": "http://api.sponsorpay.com/5aacfb9540e86c734ab611c62ce4c86c/4cdf2dfe1ac1ed47/mobile/DE/2070/offers/158900",
+      "store_id": "com.yopeso.lieferando"
+    }
+  ]
+}

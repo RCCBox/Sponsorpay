@@ -108,18 +108,22 @@ NSURLConnectionDataDelegate
   request.timeoutInterval = 20;
   request.cachePolicy = NSURLCacheStorageNotAllowed;
   
-  // Setup connection
-  NSURLConnection *connection = [[NSURLConnection alloc] initWithRequest:request
-                                                                delegate:self];
-  
-  // Send request
-  [connection start];
+  // Fetch offers
+  NSURLConnection *connection =
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
+  SPErrorAssertTrueThrowAndReturn(connection, SPErrorMissingExpectedValue);
 }
 
 #pragma mark - Private helpers (Data parsing)
 
 - (void)SP_callbackDelegateWithData:(NSData *)data
 {
+  // No offers - callback delegate without offers
+  if (!data) {
+    [self SP_callbackDelegateWithOffers:nil];
+    return;
+  }
+  
   // Convert JSON to dictionary
   NSError *error;
   NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:data

@@ -14,7 +14,6 @@
 		A4263E4518F2BBDE00377B3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E4418F2BBDE00377B3F /* UIKit.framework */; };
 		A4263E4818F2BBDE00377B3F /* libSponsorpay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E3018F2BBDE00377B3F /* libSponsorpay.a */; };
 		A4263E4E18F2BBDE00377B3F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4263E4C18F2BBDE00377B3F /* InfoPlist.strings */; };
-		A4263E5018F2BBDE00377B3F /* SponsorpayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4263E4F18F2BBDE00377B3F /* SponsorpayTests.m */; };
 		A4263E7518F2BD9500377B3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E3318F2BBDE00377B3F /* Foundation.framework */; };
 		A4263E7718F2BD9500377B3F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E7618F2BD9500377B3F /* CoreGraphics.framework */; };
 		A4263E7818F2BD9500377B3F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4263E4418F2BBDE00377B3F /* UIKit.framework */; };
@@ -42,6 +41,12 @@
 		A484DB5D18F307D3002192D8 /* SPURL.m in Sources */ = {isa = PBXBuildFile; fileRef = A484DB5C18F307D3002192D8 /* SPURL.m */; };
 		A484DB5F18F325C4002192D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484DB5E18F325C4002192D8 /* AdSupport.framework */; };
 		A484DB6018F325D7002192D8 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A484DB5E18F325C4002192D8 /* AdSupport.framework */; };
+		A484DB7818F32C5D002192D8 /* libKiwi-XCTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A484DB7318F32C42002192D8 /* libKiwi-XCTest.a */; };
+		A484DB7B18F32D14002192D8 /* SPAPIControllerSpecs.m in Sources */ = {isa = PBXBuildFile; fileRef = A484DB7A18F32CC8002192D8 /* SPAPIControllerSpecs.m */; };
+		A484DB8418F33014002192D8 /* SPRndObjFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A484DB8318F33014002192D8 /* SPRndObjFactory.m */; };
+		A4CC3CD618F3E8DD00C2B369 /* SPSwizzelingController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CD518F3E8DD00C2B369 /* SPSwizzelingController.m */; };
+		A4CC3CDA18F3EFAD00C2B369 /* SPDataFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = A4CC3CD918F3EFAD00C2B369 /* SPDataFactory.m */; };
+		A4CC3CDC18F3F0E000C2B369 /* offersAPIResponseJSON.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4CC3CDB18F3F0E000C2B369 /* offersAPIResponseJSON.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +78,48 @@
 			remoteGlobalIDString = A4263E2F18F2BBDE00377B3F;
 			remoteInfo = Sponsorpay;
 		};
+		A484DB6C18F32C42002192D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015B9F11583A77002E9A98;
+			remoteInfo = Kiwi;
+		};
+		A484DB6E18F32C42002192D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 832C83C7157263B300F160D5;
+			remoteInfo = "Kiwi-OSX";
+		};
+		A484DB7018F32C42002192D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F5015C9E11584017002E9A98;
+			remoteInfo = KiwiTests;
+		};
+		A484DB7218F32C42002192D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA084E7317E3838100592D5A;
+			remoteInfo = "Kiwi-XCTest";
+		};
+		A484DB7418F32C42002192D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA084D3E17E3804200592D5A;
+			remoteInfo = KiwiXCTests;
+		};
+		A484DB7618F32C56002192D8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DA084D5E17E3838100592D5A;
+			remoteInfo = "Kiwi-XCTest";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -98,7 +145,6 @@
 		A4263E4418F2BBDE00377B3F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		A4263E4B18F2BBDE00377B3F /* SponsorpayTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SponsorpayTests-Info.plist"; sourceTree = "<group>"; };
 		A4263E4D18F2BBDE00377B3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A4263E4F18F2BBDE00377B3F /* SponsorpayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SponsorpayTests.m; sourceTree = "<group>"; };
 		A4263E7418F2BD9500377B3F /* SponsorpayDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SponsorpayDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4263E7618F2BD9500377B3F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A4263E7B18F2BD9500377B3F /* SponsorpayDemoApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SponsorpayDemoApp-Info.plist"; sourceTree = "<group>"; };
@@ -137,6 +183,15 @@
 		A484DB5B18F307D3002192D8 /* SPURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPURL.h; path = Utility/SPURL/SPURL.h; sourceTree = "<group>"; };
 		A484DB5C18F307D3002192D8 /* SPURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPURL.m; path = Utility/SPURL/SPURL.m; sourceTree = "<group>"; };
 		A484DB5E18F325C4002192D8 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kiwi.xcodeproj; path = Vendor/Kiwi/Kiwi.xcodeproj; sourceTree = "<group>"; };
+		A484DB7A18F32CC8002192D8 /* SPAPIControllerSpecs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SPAPIControllerSpecs.m; path = Specs/SPAPIControllerSpecs.m; sourceTree = "<group>"; };
+		A484DB8218F33014002192D8 /* SPRndObjFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRndObjFactory.h; sourceTree = "<group>"; };
+		A484DB8318F33014002192D8 /* SPRndObjFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRndObjFactory.m; sourceTree = "<group>"; };
+		A4CC3CD418F3E8DD00C2B369 /* SPSwizzelingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPSwizzelingController.h; path = TestHelpers/SPSwizzelingController/SPSwizzelingController.h; sourceTree = "<group>"; };
+		A4CC3CD518F3E8DD00C2B369 /* SPSwizzelingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPSwizzelingController.m; path = TestHelpers/SPSwizzelingController/SPSwizzelingController.m; sourceTree = "<group>"; };
+		A4CC3CD818F3EFAD00C2B369 /* SPDataFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SPDataFactory.h; path = TestHelpers/SPDataFactory/SPDataFactory.h; sourceTree = "<group>"; };
+		A4CC3CD918F3EFAD00C2B369 /* SPDataFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SPDataFactory.m; path = TestHelpers/SPDataFactory/SPDataFactory.m; sourceTree = "<group>"; };
+		A4CC3CDB18F3F0E000C2B369 /* offersAPIResponseJSON.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = offersAPIResponseJSON.txt; path = TestHelpers/SPDataFactory/offersAPIResponseJSON.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +208,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A484DB7818F32C5D002192D8 /* libKiwi-XCTest.a in Frameworks */,
 				A4263E4218F2BBDE00377B3F /* XCTest.framework in Frameworks */,
 				A4263E4518F2BBDE00377B3F /* UIKit.framework in Frameworks */,
 				A4263E4318F2BBDE00377B3F /* Foundation.framework in Frameworks */,
@@ -243,7 +299,9 @@
 		A4263E4918F2BBDE00377B3F /* SponsorpayTests */ = {
 			isa = PBXGroup;
 			children = (
-				A4263E4F18F2BBDE00377B3F /* SponsorpayTests.m */,
+				A484DB7C18F32F2A002192D8 /* TestHelpers */,
+				A484DB6118F32C30002192D8 /* Vendor */,
+				A484DB7918F32CA3002192D8 /* Specs */,
 				A4263E4A18F2BBDE00377B3F /* Supporting Files */,
 			);
 			path = SponsorpayTests;
@@ -456,6 +514,81 @@
 			name = SPURL;
 			sourceTree = "<group>";
 		};
+		A484DB6118F32C30002192D8 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB6218F32C3D002192D8 /* Kiwi */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		A484DB6218F32C3D002192D8 /* Kiwi */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */,
+			);
+			name = Kiwi;
+			sourceTree = "<group>";
+		};
+		A484DB6418F32C42002192D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB6D18F32C42002192D8 /* libKiwi.a */,
+				A484DB6F18F32C42002192D8 /* libKiwi-OSX.a */,
+				A484DB7118F32C42002192D8 /* KiwiTests.octest */,
+				A484DB7318F32C42002192D8 /* libKiwi-XCTest.a */,
+				A484DB7518F32C42002192D8 /* KiwiXCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A484DB7918F32CA3002192D8 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB7A18F32CC8002192D8 /* SPAPIControllerSpecs.m */,
+			);
+			name = Specs;
+			sourceTree = "<group>";
+		};
+		A484DB7C18F32F2A002192D8 /* TestHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CD718F3EF3F00C2B369 /* SPDataFactory */,
+				A4CC3CD318F3E8C200C2B369 /* SPSwizzelingController */,
+				A484DB8118F33014002192D8 /* SPRndObjFactory */,
+			);
+			name = TestHelpers;
+			sourceTree = "<group>";
+		};
+		A484DB8118F33014002192D8 /* SPRndObjFactory */ = {
+			isa = PBXGroup;
+			children = (
+				A484DB8218F33014002192D8 /* SPRndObjFactory.h */,
+				A484DB8318F33014002192D8 /* SPRndObjFactory.m */,
+			);
+			name = SPRndObjFactory;
+			path = TestHelpers/SPRndObjFactory;
+			sourceTree = "<group>";
+		};
+		A4CC3CD318F3E8C200C2B369 /* SPSwizzelingController */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CD418F3E8DD00C2B369 /* SPSwizzelingController.h */,
+				A4CC3CD518F3E8DD00C2B369 /* SPSwizzelingController.m */,
+			);
+			name = SPSwizzelingController;
+			sourceTree = "<group>";
+		};
+		A4CC3CD718F3EF3F00C2B369 /* SPDataFactory */ = {
+			isa = PBXGroup;
+			children = (
+				A4CC3CDB18F3F0E000C2B369 /* offersAPIResponseJSON.txt */,
+				A4CC3CD818F3EFAD00C2B369 /* SPDataFactory.h */,
+				A4CC3CD918F3EFAD00C2B369 /* SPDataFactory.m */,
+			);
+			name = SPDataFactory;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -487,6 +620,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A484DB7718F32C56002192D8 /* PBXTargetDependency */,
 				A4263E4718F2BBDE00377B3F /* PBXTargetDependency */,
 			);
 			name = SponsorpayTests;
@@ -558,6 +692,12 @@
 			mainGroup = A4263E2718F2BBDE00377B3F;
 			productRefGroup = A4263E3118F2BBDE00377B3F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A484DB6418F32C42002192D8 /* Products */;
+					ProjectRef = A484DB6318F32C42002192D8 /* Kiwi.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A4263E2F18F2BBDE00377B3F /* Sponsorpay */,
@@ -568,12 +708,51 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A484DB6D18F32C42002192D8 /* libKiwi.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKiwi.a;
+			remoteRef = A484DB6C18F32C42002192D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A484DB6F18F32C42002192D8 /* libKiwi-OSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-OSX.a";
+			remoteRef = A484DB6E18F32C42002192D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A484DB7118F32C42002192D8 /* KiwiTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiTests.octest;
+			remoteRef = A484DB7018F32C42002192D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A484DB7318F32C42002192D8 /* libKiwi-XCTest.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libKiwi-XCTest.a";
+			remoteRef = A484DB7218F32C42002192D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A484DB7518F32C42002192D8 /* KiwiXCTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = KiwiXCTests.xctest;
+			remoteRef = A484DB7418F32C42002192D8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A4263E3E18F2BBDE00377B3F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A4263E4E18F2BBDE00377B3F /* InfoPlist.strings in Resources */,
+				A4CC3CDC18F3F0E000C2B369 /* offersAPIResponseJSON.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,7 +798,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4263E5018F2BBDE00377B3F /* SponsorpayTests.m in Sources */,
+				A484DB8418F33014002192D8 /* SPRndObjFactory.m in Sources */,
+				A4CC3CD618F3E8DD00C2B369 /* SPSwizzelingController.m in Sources */,
+				A484DB7B18F32D14002192D8 /* SPAPIControllerSpecs.m in Sources */,
+				A4CC3CDA18F3EFAD00C2B369 /* SPDataFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -664,6 +846,11 @@
 			isa = PBXTargetDependency;
 			target = A4263E2F18F2BBDE00377B3F /* Sponsorpay */;
 			targetProxy = A4263EAA18F2BE7400377B3F /* PBXContainerItemProxy */;
+		};
+		A484DB7718F32C56002192D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Kiwi-XCTest";
+			targetProxy = A484DB7618F32C56002192D8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -803,8 +990,15 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "SponsorpayTests/SponsorpayTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}/SponsorpayTests/Vendor/Kiwi/\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -821,8 +1015,15 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Sponsorpay/Sponsorpay-Prefix.pch";
 				INFOPLIST_FILE = "SponsorpayTests/SponsorpayTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "\"${SRCROOT}/SponsorpayTests/Vendor/Kiwi/\"/**";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

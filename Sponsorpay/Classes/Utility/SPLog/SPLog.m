@@ -41,7 +41,7 @@
                  message:(NSString *)msg
 {
   const char *arch = [[[self class] SP_arch] cStringUsingEncoding:NSUTF8StringEncoding];
-  printf("Sponsorpay.framework(%s): ", arch);
+  printf("Sponsorpay.sdk(%s): ", arch);
   if (prefix) printf("%s: ", [prefix cStringUsingEncoding:NSUTF8StringEncoding]);
   if (msg) printf("%s\n", [msg cStringUsingEncoding:NSUTF8StringEncoding]);
   if (logCallStack) printf("%s\n", [[self class] SP_callStackSymbols]);
