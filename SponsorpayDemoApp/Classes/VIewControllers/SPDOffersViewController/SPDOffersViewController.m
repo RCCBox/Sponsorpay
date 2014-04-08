@@ -101,11 +101,17 @@
   
   // Calculate row height
   NSString *text = offer.teaser;
-  UIFont *font = [UIFont fontWithName:@"Helvetica" size:14.0];
   CGSize constraint = CGSizeMake(280.0f, MAXFLOAT);
-  CGSize labelSize = [text sizeWithFont:font
-                      constrainedToSize:constraint
-                          lineBreakMode:NSLineBreakByWordWrapping];
+  NSStringDrawingOptions options = (NSStringDrawingTruncatesLastVisibleLine|
+                                    NSStringDrawingUsesLineFragmentOrigin);
+  UIFont *font = [UIFont fontWithName:@"Helvetica" size:14.0];
+  NSDictionary *attributes =
+    @{@"NSFontAttributeName": font};
+  CGRect labelRect = [text boundingRectWithSize:constraint
+                                        options:options
+                                     attributes:attributes
+                                        context:nil];
+  CGSize labelSize = labelRect.size;
   
   return labelSize.height + 40;
 }
