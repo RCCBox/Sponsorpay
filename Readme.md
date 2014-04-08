@@ -38,6 +38,11 @@ Unit tests can be executed on the simulator by selecting the Sponsorpay target a
 
 Wrapper iOS app for the Sponsorpay static library that is able to perform a request to the Sponsorpay offers API and displays the fetched results in a table view.
 
+
+#### Class and flow scheme
+
+[<img src="./Documentation/images/class+flow_chart.png">](./Documentation/images/class+flow_chart.png)
+
 #### Acknowledgements
 
 Unit testing:
